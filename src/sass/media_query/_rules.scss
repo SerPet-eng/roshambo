@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+  .section {
+    &__rules {
+      border: none;
+      border-radius: 10px;
+      padding: 1rem;
+
+      top: 20%;
+      right: 20%;
+      left: 20%;
+      bottom: 20%;
+
+      &__title {
+        margin-top: 0;
+      }
+
+      &__icon {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

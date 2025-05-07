@@ -1,0 +1,367 @@
+/* === RESET === */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* === APP === */
+#root {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  height: 100vh;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.dark-mode {
+  background: linear-gradient(0deg, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  color: white;
+}
+
+.light-mode {
+  background: hsl(214, 100%, 85%);
+  color: black;
+}
+
+/* === HOME === */
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  background-color: linear-gradient(0deg, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+.main__title {
+  display: flex;
+  font-size: 4rem;
+  text-shadow: 0 0 5px white;
+}
+.main__quote {
+  font-size: 1.5rem;
+}
+.main__button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100px;
+}
+.main__button-group__button {
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main__button-group__button:hover {
+  box-shadow: 0 0 5px white;
+}
+
+/* === GAMEPLAY === */
+.section__button-group-utils {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.section__button-group-utils button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.section__button-group-utils button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px white;
+}
+.section__score-board {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid hsl(217, 16%, 45%);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+.section__score-board__text {
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.section__score-board__hero {
+  width: 100px;
+  text-align: center;
+  background-color: whitesmoke;
+  color: black;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+}
+.section__score-board__hero__text {
+  font-weight: 600;
+  color: hsl(229, 25%, 31%);
+}
+.section__score-board__hero__number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(229, 25%, 31%);
+}
+.section__pick {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+.section__pick__item {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  outline: 5px solid white;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  z-index: 1;
+}
+.section__pick__item:hover {
+  transform: scale(1.05);
+}
+.section__pick__item--rock {
+  background: linear-gradient(90deg, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+.section__pick__item--paper {
+  background: linear-gradient(90deg, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+.section__pick__item--scissor {
+  background: linear-gradient(90deg, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+.section__pick__item--lizard {
+  background: linear-gradient(90deg, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+}
+.section__pick__item--spock {
+  background: linear-gradient(90deg, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+}
+.section__pick__button {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  margin-top: 95%;
+  transition: all 0.3s ease-in-out;
+}
+.section__pick__button:active {
+  transform: scale(1.2);
+}
+.section__rules {
+  display: none;
+  padding: 5rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0 auto;
+  background-color: white;
+  z-index: 10;
+}
+.section__rules__title {
+  margin-top: 5rem;
+  color: hsl(229, 25%, 31%);
+}
+.section__rules__icon {
+  margin-top: 4.5rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  outline: 5px solid white;
+  background-color: rgb(231, 227, 227);
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.section__rules.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.section__pick-group {
+  margin-top: 1rem;
+  height: 50vh;
+}
+.section__pick-group__display {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section__pick-group__display__players {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.section__pick-group__display__players__text {
+  font-weight: 700;
+}
+.section__pick-group__display__players__icon--rock {
+  background: linear-gradient(90deg, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+.section__pick-group__display__players__icon--paper {
+  background: linear-gradient(90deg, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+.section__pick-group__display__players__icon--scissor {
+  background: linear-gradient(90deg, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+.section__pick-group__display__players__icon--lizard {
+  background: linear-gradient(90deg, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+}
+.section__pick-group__display__players__icon--spock {
+  background: linear-gradient(90deg, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+}
+.section__pick-group__conclusion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+}
+.section__pick-group__conclusion__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 0 0 5px white;
+}
+.section__pick-group__conclusion__button {
+  padding: 0.5rem;
+  width: 65%;
+  border: none;
+  border-radius: 10px;
+  font-size: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.section__pick-group__conclusion__button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px white;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  outline: 5px solid white;
+}
+
+.active {
+  z-index: 2;
+  outline: 10px solid red;
+}
+
+/* === OPTION === */
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.option button {
+  width: 50%;
+  font-weight: 600;
+}
+
+/* === MEDIA QUERIES === */
+@media (min-width: 768px) {
+  .section__rules {
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    top: 20%;
+    right: 20%;
+    left: 20%;
+    bottom: 20%;
+  }
+  .section__rules__title {
+    margin-top: 0;
+  }
+  .section__rules__icon {
+    margin-top: 2rem;
+  }
+}
+/* === MEDIA QUERIES === *//*# sourceMappingURL=style.css.map */

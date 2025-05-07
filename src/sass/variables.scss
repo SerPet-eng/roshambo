@@ -1,0 +1,49 @@
+$clr-Primary-Scissor: linear-gradient(
+  90deg,
+  hsl(39, 89%, 49%),
+  hsl(40, 84%, 53%)
+);
+
+$clr-Primary-Paper: linear-gradient(
+  90deg,
+  hsl(230, 89%, 62%),
+  hsl(230, 89%, 65%)
+);
+
+$clr-Primary-Rock: linear-gradient(
+  90deg,
+  hsl(349, 71%, 52%),
+  hsl(349, 70%, 56%)
+);
+
+$clr-Primary-Lizard: linear-gradient(
+  90deg,
+  hsl(261, 73%, 60%),
+  hsl(261, 72%, 63%)
+);
+
+$clr-Primary-Spock: linear-gradient(
+  90deg,
+  hsl(189, 59%, 53%),
+  hsl(189, 58%, 57%)
+);
+
+$clr-Neutral-Dark-Text: hsl(229, 25%, 31%);
+$clr-Neutral-Score-Text: hsl(217, 16%, 45%);
+
+$clr-Background-Dark: linear-gradient(
+  0deg,
+  hsl(214, 47%, 23%),
+  hsl(237, 49%, 15%)
+);
+
+$clr-Background-Light: linear-gradient(
+  0deg,
+  hsl(238, 100%, 28%),
+  hsl(214, 100%, 76%)
+);
+
+$fw-600: 600;
+$fw-700: 700;
+
+$ff-Barlow-Semi-Condensed: 'Barlow Semi Condensed', sans-serif;

@@ -1,0 +1,14 @@
+@use '../variables.scss' as *;
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  button {
+    width: 50%;
+    font-weight: $fw-600;
+  }
+}

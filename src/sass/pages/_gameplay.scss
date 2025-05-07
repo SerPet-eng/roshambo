@@ -1,0 +1,256 @@
+@use '../variables.scss' as *;
+
+.section {
+  &__button-group-utils {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    button {
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem;
+
+      font-weight: $fw-600;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 5px white;
+      }
+    }
+  }
+
+  //* SCOREBOARD *//
+
+  &__score-board {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid $clr-Neutral-Score-Text;
+    border-radius: 10px;
+
+    padding: 1.5rem;
+
+    &__text {
+      font-weight: $fw-600;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+    }
+
+    &__hero {
+      width: 100px;
+      text-align: center;
+      background-color: whitesmoke;
+      color: black;
+
+      padding: 0.5rem;
+      border: none;
+      border-radius: 10px;
+
+      &__text {
+        font-weight: $fw-600;
+        color: $clr-Neutral-Dark-Text;
+      }
+
+      &__number {
+        font-size: 3rem;
+        font-weight: $fw-700;
+        color: $clr-Neutral-Dark-Text;
+      }
+    }
+  }
+
+  //* SCOREBOARD *//
+
+  //* PLAYER PICK *//
+
+  &__pick {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+
+    &__item {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      outline: 5px solid white;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+      z-index: 1;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      &--rock {
+        background: $clr-Primary-Rock;
+      }
+      &--paper {
+        background: $clr-Primary-Paper;
+      }
+      &--scissor {
+        background: $clr-Primary-Scissor;
+      }
+      &--lizard {
+        background: $clr-Primary-Lizard;
+      }
+      &--spock {
+        background: $clr-Primary-Spock;
+      }
+    }
+
+    &__button {
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      font-size: 1.25rem;
+      font-weight: $fw-600;
+      padding: 0.5rem;
+
+      margin-top: 95%;
+
+      transition: all 0.3s ease-in-out;
+      &:active {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  //* PLAYER PICK *//
+
+  //* RULES *//
+
+  &__rules {
+    display: none;
+    padding: 5rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    padding: 0 auto;
+    background-color: white;
+    z-index: 10;
+
+    &__title {
+      margin-top: 5rem;
+      color: $clr-Neutral-Dark-Text;
+    }
+
+    &__icon {
+      margin-top: 4.5rem;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      outline: 5px solid white;
+      background-color: rgb(231, 227, 227);
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    &.open {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  //* RULES *//
+
+  //* PICK DISPLAY *//
+
+  &__pick-group {
+    margin-top: 1rem;
+
+    height: 50vh;
+    &__display {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      &__players {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        &__text {
+          font-weight: $fw-700;
+        }
+
+        &__icon {
+          &--rock {
+            background: $clr-Primary-Rock;
+          }
+          &--paper {
+            background: $clr-Primary-Paper;
+          }
+          &--scissor {
+            background: $clr-Primary-Scissor;
+          }
+          &--lizard {
+            background: $clr-Primary-Lizard;
+          }
+          &--spock {
+            background: $clr-Primary-Spock;
+          }
+        }
+      }
+    }
+
+    &__conclusion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem auto;
+
+      &__title {
+        font-size: 3rem;
+        font-weight: $fw-700;
+        text-shadow: 0 0 5px white;
+      }
+
+      &__button {
+        padding: 0.5rem;
+        width: 65%;
+        border: none;
+        border-radius: 10px;
+        font-size: $fw-600;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+          box-shadow: 0 0 5px white;
+        }
+      }
+    }
+  }
+
+  //* PICK DISPLAY *//
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  outline: 5px solid white;
+}
+
+.active {
+  z-index: 2;
+  outline: 10px solid red;
+}
