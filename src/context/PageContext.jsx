@@ -7,7 +7,7 @@ import {
   useEffect,
 } from 'react';
 import { ACTIONS } from '../store/store';
-import { EASY_PICK, HARD_PICK } from '../store/Picks';
+import { EASY_PICK, HARD_PICK } from '../store/picks';
 
 const PageProvider = createContext(null);
 
