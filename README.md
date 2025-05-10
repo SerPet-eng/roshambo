@@ -1,119 +1,177 @@
-# Frontend Mentor - Rock, Paper, Scissors
+# Frontend Mentor - Rock, Paper, Scissors solution
 
-![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this Rock, Paper, Scissors game and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the game depending on their device's screen size
 - Play Rock, Paper, Scissors against the computer
-- **Bonus**: Maintain the state of the score after refreshing the browser
-- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer
+- Maintain the state of the score after refreshing the browser _(optional)_
+- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
 
-### Rules
+### Screenshot
 
-If the player wins, they gain 1 point. If the computer wins, the player loses one point.
+#### Title Screen
 
-#### Original
+![Title Screen - Desktop]('./README_images/project-roshambo-desktop.webp')
+![Title Screen - Mobile]('./README_images/project-roshambo-mobile.webp')
 
-- Paper beats Rock
-- Rock beats Scissors
-- Scissors beats Paper
+> This is the title screen for the "rock-paper-scissors" game. I renamed it "ROSHAMBO" as a unique twist on the classic name.
 
-#### Bonus
+#### Gameplay
 
-- Scissors beats Paper
-- Paper beats Rock
-- Rock beats Lizard
-- Lizard beats Spock
-- Spock beats Scissors
-- Scissors beats Lizard
-- Paper beats Spock
-- Rock beats Scissors
-- Lizard beats Paper
-- Spock beats Rock
+![Game 1]('./README_images/roshambo-play-1.webp')
+![Game 2]('./README_images/roshambo-play-2.webp')
+![Game 3]('./README_images/roshambo-play-3.webp')
 
-Not sure what Rock, Paper, Scissors, Lizard, Spock is? [Check out this clip from The Big Bang Theory](https://www.youtube.com/watch?v=iSHPVCBsnLw).
+> The gameplay consists of three steps:
+>
+> 1. You pick your play
+> 2. You confirm your pick
+> 3. The result of the game is shown with an option to play again
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+#### Rules
 
-## Where to find everything
+![Rule Preview - Desktop]('./README_images/roshambo-rule-desktop.webp')
+![Rules Preview - Mobile]('./README_images/roshambo-rule-mobile.webp')
 
-Your task is to build out the project to the designs inside the `/design` folder. You can either choose the `original` designs for the simpler version or the `bonus` designs for the harder version. You will find both mobile and desktop versions of the design to work to. Each file is also named depending on which step in the game the design is for.
+> Displays the game rules, including how each item defeats another.
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+#### Themes
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+![Light Mode]('./README_images/roshambo-light-mode.webp')
+![Dark Mode]('./README_images/roshambo-dark-mode.webp')
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+> The game supports both Light and Dark themes.
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+### Links
 
-## Building your project
+- Solution URL: [Link for the solution](https://github.com/SerPet-eng/roshambo)
+- Live Site URL: [Live preview of the solution](https://glittery-biscotti-2c3be7.netlify.app/)
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+## My process
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### Built with
 
-## Deploying your project
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [React Router v7](https://reactrouter.com/) - React Router Manager
+- [SASS](https://sass-lang.com/) - For styles
+- [Framer Motion](https://motion.dev/) - For animations
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+### What I learned
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+I approached this challenge thoughtfully and made sure to plan the core logic before jumping into the UI.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+**Example:** I started by outlining the core functions I needed. One important function was getHousePick() which randomly chooses a move from the appropriate set:
 
-## Create a custom `README.md`
+```js
+export const EASY_PICK = [
+  { name: 'rock', icon: IconRock },
+  { name: 'paper', icon: IconPaper },
+  { name: 'scissor', icon: IconScissor },
+];
+export const HARD_PICK = [
+  { name: 'rock', icon: IconRock },
+  { name: 'paper', icon: IconPaper },
+  { name: 'scissor', icon: IconScissor },
+  { name: 'lizard', icon: IconLizard },
+  { name: 'spock', icon: IconSpock },
+];
+```
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+To determine the winner:
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+```jsx
+useEffect(() => {
+  if (!playerPick || !housePick) return; // Ensure the player has picked something before playing
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+  if (playerPick === housePick) {
+    return dispatch({ type: ACTIONS.TIE });
+  } else if (
+    (playerPick === 'rock' && housePick === 'scissor') ||
+    (playerPick === 'paper' && housePick === 'rock') ||
+    (playerPick === 'scissor' && housePick === 'paper') ||
+    (playerPick === 'lizard' && housePick === 'paper') ||
+    (playerPick === 'lizard' && housePick === 'spock') ||
+    (playerPick === 'spock' && housePick === 'scissor') ||
+    (playerPick === 'spock' && housePick === 'rock') ||
+    (playerPick === 'scissor' && housePick === 'lizard') ||
+    (playerPick === 'paper' && housePick === 'spock')
+  ) {
+    return dispatch({ type: ACTIONS.PLAYER_WINS });
+  } else {
+    return dispatch({ type: ACTIONS.HOUSE_WINS });
+  }
+}, [housePick]);
+```
 
-## Submitting your solution
+> The idea of this code was when the `housePick` trigger where the house will pick its play, it check if the `playerPick` beats what the house pick, if not then the win will goes to the house.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+I also explored creative ways of placing buttons using Math.PI to position them in a circular layout:
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+```js
+export const RADIUS = 90;
 
-## Sharing your solution
+export const getPositionStyle = (index, total, radius) => {
+  const angle = (2 * Math.PI * index) / total - Math.PI / 2;
+  const x = radius * Math.cos(angle);
+  const y = radius * Math.sin(angle);
+  return {
+    position: 'absolute',
+    left: `calc(50% + ${x}px - 50px)`,
+    top: `calc(50% + ${y}px - 50px)`,
+  };
+};
+```
 
-There are multiple places you can share your solution:
+### Key Takeaways
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+- I explored using `Math.PI` to arrange items in a circular layout—this was a breakthrough moment for me. The result felt satisfying and mathematically sound.
+- I practiced separating logic into utility functions like `getPositionStyle()`, improving code readability and reuse.
+- I solidified my understanding of game logic through `useEffect` and the `useReducer` hook.
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+### Continued development
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+I plan to:
 
-## Got feedback for us?
+- Improve my use of custom hooks and state management libraries like Zustand or Redux Toolkit
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+- Learn how to better structure reducers and action handling for scalability
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+- Explore more design techniques using math, geometry, and animations
 
-**Have fun building!** 🚀
+Though I used only useReducer here, it provided a clean and manageable way to control game state.
+
+### Future Improvements
+
+- Experiment with more advanced state management libraries like Redux or Zustand in larger projects.
+- Focus on writing modular and reusable utility functions.
+- Explore mathematical approaches (like using geometry in UI) for more creative layouts.
+- Improve test coverage and edge case handling for game logic.
+
+## Author
+
+- Website - [My Simple Portfolio](https://my-portfolio-christian-dg.netlify.app/)
+- Frontend Mentor - [@SerPet-eng](https://www.frontendmentor.io/profile/SerPet-eng)
+- Twitter - [@dchristian796](https://x.com/dchristian796)
