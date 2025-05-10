@@ -29,16 +29,16 @@ Users should be able to:
 
 #### Title Screen
 
-![Title Screen - Desktop]('./README_images/project-roshambo-desktop.webp')
-![Title Screen - Mobile]('./README_images/project-roshambo-mobile.webp')
+![Title Screen - Desktop](./README_images/project-roshambo-desktop.webp)
+![Title Screen - Mobile](./README_images/project-roshambo-mobile.webp)
 
 > This is the title screen for the "rock-paper-scissors" game. I renamed it "ROSHAMBO" as a unique twist on the classic name.
 
 #### Gameplay
 
-![Game 1]('./README_images/roshambo-play-1.webp')
-![Game 2]('./README_images/roshambo-play-2.webp')
-![Game 3]('./README_images/roshambo-play-3.webp')
+![Game 1](./README_images/roshambo-play-1.webp)
+![Game 2](./README_images/roshambo-play-2.webp)
+![Game 3](./README_images/roshambo-play-3.webp)
 
 > The gameplay consists of three steps:
 >
@@ -48,15 +48,15 @@ Users should be able to:
 
 #### Rules
 
-![Rule Preview - Desktop]('./README_images/roshambo-rule-desktop.webp')
-![Rules Preview - Mobile]('./README_images/roshambo-rule-mobile.webp')
+![Rule Preview - Desktop](./README_images/roshambo-rule-desktop.webp)
+![Rules Preview - Mobile](./README_images/roshambo-rule-mobile.webp)
 
 > Displays the game rules, including how each item defeats another.
 
 #### Themes
 
-![Light Mode]('./README_images/roshambo-light-mode.webp')
-![Dark Mode]('./README_images/roshambo-dark-mode.webp')
+![Light Mode](./README_images/roshambo-light-mode.webp)
+![Dark Mode](./README_images/roshambo-dark-mode.webp)
 
 > The game supports both Light and Dark themes.
 
